@@ -1,0 +1,23 @@
+{
+    "name": "mindweb/rabbitmq-collector",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcin Czołnowski",
+            "email": "marcin@czolnowski.net"
+        }
+    ],
+    "require": {
+        "mindweb/modifier": "dev-master",
+        "mindweb/forwarder": "dev-master",
+        "mindweb/collector": "dev-master",
+        "videlalvaro/php-amqplib": "v2.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mindweb\\RabbitMQCollector\\": "src"
+        }
+    }
+}

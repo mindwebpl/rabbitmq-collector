@@ -90,7 +90,7 @@ class RabbitMQCollector implements Collector\Collector
         $this->locale = !empty($configuration['locale']) ? $configuration['locale'] : 'en_US';
         $this->connection_timeout = !empty($configuration['connection_timeout']) ? $configuration['connection_timeout'] : 3;
         $this->read_write_timeout = !empty($configuration['read_write_timeout']) ? $configuration['read_write_timeout'] : 3;
-        $this->queue = !empty($configuration['exchange']) ? $configuration['exchange'] : 'analytics.actions';
+        $this->queue = !empty($configuration['queue']) ? $configuration['queue'] : 'analytics.actions';
         $this->numberOfWorkers = !empty($configuration['numberOfWorkers']) ? $configuration['numberOfWorkers'] : 1;
     }
 
